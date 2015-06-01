@@ -105,9 +105,9 @@ import UIKit
         }
         
         
-        @IBAction func ClearButton(sender: AnyObject) {
-            clearButtonPressed()	}
-        
+		@IBAction func Clear_Button(sender: AnyObject) {
+			  clearButtonPressed()
+		}
         
         func checkEingabe() {
             
