@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Ergebnis"; ObjectID = "b2N-NI-LeL"; */
+"b2N-NI-LeL.text" = "Ergebnis";
+
+/* Class = "UITextField"; placeholder = "Eingabe 3"; ObjectID = "cKo-lJ-i7X"; */
+"cKo-lJ-i7X.placeholder" = "Eingabe 3";
+
+/* Class = "UIButton"; normalTitle = "Löschen"; ObjectID = "duE-b9-232"; */
+"duE-b9-232.normalTitle" = "Löschen";
+
+/* Class = "UITextField"; placeholder = "Eingabe 1"; ObjectID = "qlQ-l9-2KC"; */
+"qlQ-l9-2KC.placeholder" = "Eingabe 1";
+
+/* Class = "UITextField"; placeholder = "Eingabe 2"; ObjectID = "sDi-mG-Mvo"; */
+"sDi-mG-Mvo.placeholder" = "Eingabe 2";

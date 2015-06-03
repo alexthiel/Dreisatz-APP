@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77BC10E81B1F7D7B00712FAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77BC10EA1B1F7D7B00712FAD /* Localizable.strings */; };
 		77EC1D2F1B1B9FD90061C53E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC1D2E1B1B9FD90061C53E /* AppDelegate.swift */; };
 		77EC1D311B1B9FD90061C53E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC1D301B1B9FD90061C53E /* ViewController.swift */; };
 		77EC1D341B1B9FD90061C53E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC1D321B1B9FD90061C53E /* Main.storyboard */; };
@@ -26,6 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77BC10E41B1F7B6500712FAD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		77BC10E51B1F7B6500712FAD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		77BC10E91B1F7D7B00712FAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77BC10EB1B1F7D7E00712FAD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77EC1D291B1B9FD90061C53E /* DreisatzAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreisatzAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC1D2D1B1B9FD90061C53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77EC1D2E1B1B9FD90061C53E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 		77EC1D201B1B9FD80061C53E = {
 			isa = PBXGroup;
 			children = (
+				77BC10EA1B1F7D7B00712FAD /* Localizable.strings */,
 				77EC1D2B1B1B9FD90061C53E /* DreisatzAPP */,
 				77EC1D411B1B9FD90061C53E /* DreisatzAPPTests */,
 				77EC1D2A1B1B9FD90061C53E /* Products */,
@@ -177,6 +183,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 77EC1D201B1B9FD80061C53E;
 			productRefGroup = 77EC1D2A1B1B9FD90061C53E /* Products */;
@@ -195,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77EC1D341B1B9FD90061C53E /* Main.storyboard in Resources */,
+				77BC10E81B1F7D7B00712FAD /* Localizable.strings in Resources */,
 				77EC1D391B1B9FD90061C53E /* LaunchScreen.xib in Resources */,
 				77EC1D361B1B9FD90061C53E /* Images.xcassets in Resources */,
 			);
@@ -238,10 +246,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		77BC10EA1B1F7D7B00712FAD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BC10E91B1F7D7B00712FAD /* en */,
+				77BC10EB1B1F7D7E00712FAD /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		77EC1D321B1B9FD90061C53E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				77EC1D331B1B9FD90061C53E /* Base */,
+				77BC10E41B1F7B6500712FAD /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -250,6 +268,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77EC1D381B1B9FD90061C53E /* Base */,
+				77BC10E51B1F7B6500712FAD /* de */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

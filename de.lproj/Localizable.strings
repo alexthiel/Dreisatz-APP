@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  DreisatzAPP
+
+  Created by Thiel, Alexander on 03.06.15.
+  Copyright (c) 2015 Thiel, Alexander. All rights reserved.
+*/
+Eingabe_1="Eingabe 1 ist leer";
+Eingabe_2="Eingabe 2 ist leer";
+Eingabe_3="Eingabe 3 ist leer";

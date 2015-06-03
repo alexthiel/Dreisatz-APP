@@ -8,15 +8,7 @@
 
 import UIKit
 
-// class ViewController: UIViewController {
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//    }
-
-
-    
     class CustomTextField: UITextField{
         required init(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
@@ -117,36 +109,34 @@ import UIKit
             
             
             if Eingabe1_TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
-                Formel_LF.text = "Eingabe 1 leer"
+                Formel_LF.text = NSLocalizedString("Eingabe_1", comment: "Eingabe 1 ist leer")
                 return
             } else if
                 
                 Eingabe2_TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
-                    Formel_LF.text = "Eingabe 2 leer"
+                    Formel_LF.text = NSLocalizedString("Eingabe_2", comment: "Eingabe 2 ist leer")
                     return
             } else if
                 
                 Eingabe3_TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
-                    Formel_LF.text = "Eingabe 3 leer"
+                    Formel_LF.text = NSLocalizedString("Eingabe_3", comment: "Eingabe 3 ist leer")
                     return
             }
             
             
             Formel_LF.text = "(\(zahl2) / \(zahl3))  * \(zahl1) = \(zahl2 / zahl3 * zahl1)"
-            Ergebnis_Label.text = "\(zahl2 / zahl3 * zahl1)"
-            
+            Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 / zahl3 * zahl1)
             
         }
         
-        
+		var numberFormatter: NSNumberFormatter {
+			let formatter = NSNumberFormatter()
+			formatter.numberStyle = .DecimalStyle
+			return formatter
+		}
         
         
         
         
         
     }
-    
-
- 
-//}
-
