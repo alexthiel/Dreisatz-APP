@@ -8,3 +8,5 @@
 Eingabe_1="Eingabe 1 ist leer";
 Eingabe_2="Eingabe 2 ist leer";
 Eingabe_3="Eingabe 3 ist leer";
+//Solution_Label="Wenn 10 Leute 5 Stunden brauchen, dann brauchen 20 Leute 2.5 Stunden";
+Solution_Label="Wenn";

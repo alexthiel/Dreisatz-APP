@@ -87,6 +87,12 @@
                                 <rect key="frame" x="95" y="-14" width="300" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solution" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="F92-EC-5MG">
+                                <rect key="frame" x="24" y="222" width="560" height="134"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -98,6 +104,7 @@
                             <constraint firstItem="qlQ-l9-2KC" firstAttribute="leading" secondItem="mpb-tS-zsx" secondAttribute="leadingMargin" constant="15" id="F5A-7M-tqF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Ws-Gs-mQm" secondAttribute="trailing" constant="-50" id="Jpl-69-5A0"/>
                             <constraint firstItem="cXo-UT-p5r" firstAttribute="top" secondItem="cKo-lJ-i7X" secondAttribute="bottom" constant="18" id="NY2-xL-kYQ"/>
+                            <constraint firstItem="F92-EC-5MG" firstAttribute="trailing" secondItem="mpb-tS-zsx" secondAttribute="trailingMargin" constant="25" id="NaA-Uq-cQ3"/>
                             <constraint firstItem="1Ws-Gs-mQm" firstAttribute="top" secondItem="mpb-tS-zsx" secondAttribute="topMargin" id="Nzd-AC-QFH"/>
                             <constraint firstItem="cXo-UT-p5r" firstAttribute="leading" secondItem="mpb-tS-zsx" secondAttribute="leading" constant="40" id="OPy-M2-rEO"/>
                             <constraint firstAttribute="trailing" secondItem="sDi-mG-Mvo" secondAttribute="trailing" constant="10" id="VIF-Ue-39L"/>
@@ -118,6 +125,8 @@
                             <constraint firstItem="1Ws-Gs-mQm" firstAttribute="leading" secondItem="mpb-tS-zsx" secondAttribute="leadingMargin" constant="-50" id="smM-2C-x1p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b2N-NI-LeL" secondAttribute="trailing" constant="25" id="t7f-Hl-TRI"/>
                             <constraint firstAttribute="trailing" secondItem="duE-b9-232" secondAttribute="trailing" constant="25" id="tgV-zm-jmh"/>
+                            <constraint firstItem="F92-EC-5MG" firstAttribute="top" secondItem="cXo-UT-p5r" secondAttribute="bottom" constant="30" id="u2H-wz-woR"/>
+                            <constraint firstItem="F92-EC-5MG" firstAttribute="leading" secondItem="mpb-tS-zsx" secondAttribute="leadingMargin" constant="15" id="zXU-na-iTf"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -132,6 +141,7 @@
                         <outlet property="Eingabe3_TF" destination="cKo-lJ-i7X" id="11a-az-HId"/>
                         <outlet property="Ergebnis_Label" destination="b2N-NI-LeL" id="BCA-n1-I4n"/>
                         <outlet property="Formel_LF" destination="cXo-UT-p5r" id="chB-a5-mIM"/>
+                        <outlet property="Solution_Label" destination="F92-EC-5MG" id="FAj-W0-l32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

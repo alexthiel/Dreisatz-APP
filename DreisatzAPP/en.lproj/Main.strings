@@ -1,18 +1,18 @@
 
 /* Class = "UILabel"; text = "Solution"; ObjectID = "F92-EC-5MG"; */
-"F92-EC-5MG.text" = "Lösungssatz";
+"F92-EC-5MG.text" = "Solution";
 
 /* Class = "UILabel"; text = "Result"; ObjectID = "b2N-NI-LeL"; */
-"b2N-NI-LeL.text" = "Ergebnis";
+"b2N-NI-LeL.text" = "Result";
 
 /* Class = "UITextField"; placeholder = "Value 3"; ObjectID = "cKo-lJ-i7X"; */
-"cKo-lJ-i7X.placeholder" = "Eingabe 3";
+"cKo-lJ-i7X.placeholder" = "Value 3";
 
 /* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "duE-b9-232"; */
-"duE-b9-232.normalTitle" = "Löschen";
+"duE-b9-232.normalTitle" = "Clear";
 
 /* Class = "UITextField"; placeholder = "Value 1"; ObjectID = "qlQ-l9-2KC"; */
-"qlQ-l9-2KC.placeholder" = "Eingabe 1";
+"qlQ-l9-2KC.placeholder" = "Value 1";
 
 /* Class = "UITextField"; placeholder = "Value 2"; ObjectID = "sDi-mG-Mvo"; */
-"sDi-mG-Mvo.placeholder" = "Eingabe 2";
+"sDi-mG-Mvo.placeholder" = "Value 2";

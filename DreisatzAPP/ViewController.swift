@@ -36,6 +36,7 @@ import UIKit
         @IBOutlet weak var Formel_LF: UILabel!
         @IBOutlet weak var Ergebnis_Label: UILabel!
 		
+        @IBOutlet weak var Solution_Label: UILabel!
         
 		override func didReceiveMemoryWarning() {
 			super.didReceiveMemoryWarning()
@@ -61,7 +62,7 @@ import UIKit
             Eingabe3_TF.text = ""
             Formel_LF.text = ""
             Ergebnis_Label.text = ""
-            
+            Solution_Label.text = ""
         }
         
         
@@ -126,8 +127,13 @@ import UIKit
             
             Formel_LF.text = "(\(zahl2) / \(zahl3))  * \(zahl1) = \(zahl2 / zahl3 * zahl1)"
             Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 / zahl3 * zahl1)
-            
-        }
+			
+			//let Solutionfield = NSString.localizedStringWithFormat(NSLocalizedString("Solution_Label", comment: "Solution_Label"),) + "HAllo"
+			
+			let Solutionfield = NSLocalizedString("Solution_Label", comment:"Solution_Label") + ("hallo")
+			println (Solutionfield)
+			
+		}
         
 		var numberFormatter: NSNumberFormatter {
 			let formatter = NSNumberFormatter()
