@@ -48,7 +48,8 @@ import UIKit
             Eingabe1_TF.delegate = self
             Eingabe2_TF.delegate = self
             Eingabe3_TF.delegate = self
-            
+			
+			Solutionphrase()
         }
         
         override func canBecomeFirstResponder() -> Bool {
@@ -62,10 +63,21 @@ import UIKit
             Eingabe3_TF.text = ""
             Formel_LF.text = ""
             Ergebnis_Label.text = ""
-            Solution_Label.text = ""
+            //Solution_Label.text = ""
+			Solutionphrase()
         }
         
-        
+		
+		
+		func Solutionphrase () {
+			let Solutionfield1 = NSLocalizedString("Solution_Label_part_1", comment:"Solution_Label_Part_1") + (Eingabe1_TF.text) + NSLocalizedString("Solution_Label_part_2", comment:"Solution_Label_Part_2") + (Eingabe2_TF.text) + NSLocalizedString("Solution_Label_part_3", comment:"Solution_Label_Part_3") + (Eingabe3_TF.text)
+			let Solutionfield2 = NSLocalizedString("Solution_Label_part_4", comment:"Solution_Label_Part_4") + (Ergebnis_Label.text)! + NSLocalizedString("Solution_Label_part_5", comment:"Solution_Label_Part_5")
+			
+			
+			Solution_Label.text = Solutionfield1 + Solutionfield2
+
+		}
+		
         override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
             view.endEditing(true)
             super.touchesBegan(touches, withEvent: event)
@@ -86,6 +98,7 @@ import UIKit
         
         func textFieldShouldClear(textField: UITextField) -> Bool {
             checkEingabe()
+			Solutionphrase()
             return true
         }
         
@@ -93,7 +106,8 @@ import UIKit
         func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
             
             textField.text = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
-            checkEingabe()
+			Solutionphrase()
+			checkEingabe()
             return false
         }
         
@@ -128,12 +142,7 @@ import UIKit
             Formel_LF.text = "(\(zahl2) / \(zahl3))  * \(zahl1) = \(zahl2 / zahl3 * zahl1)"
             Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 / zahl3 * zahl1)
 			
-			
-			let Solutionfield1 = NSLocalizedString("Solution_Label_part_1", comment:"Solution_Label_Part_1") + (Eingabe1_TF.text) + NSLocalizedString("Solution_Label_part_2", comment:"Solution_Label_Part_2") + (Eingabe2_TF.text) + NSLocalizedString("Solution_Label_part_3", comment:"Solution_Label_Part_3") + (Eingabe3_TF.text)
-			let Solutionfield2 = NSLocalizedString("Solution_Label_part_4", comment:"Solution_Label_Part_4") + (Ergebnis_Label.text)! + NSLocalizedString("Solution_Label_part_5", comment:"Solution_Label_Part_5")
-
-	
-			Solution_Label.text = Solutionfield1 + Solutionfield2
+			Solutionphrase()
 			
 		}
         
