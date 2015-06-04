@@ -9,4 +9,16 @@ Eingabe_1="Eingabe 1 ist leer";
 Eingabe_2="Eingabe 2 ist leer";
 Eingabe_3="Eingabe 3 ist leer";
 //Solution_Label="Wenn 10 Leute 5 Stunden brauchen, dann brauchen 20 Leute 2.5 Stunden";
-Solution_Label="Wenn";
+
+Solution_Label_part_1="Wenn ";
+Solution_Label_part_2=" Leute ";
+Solution_Label_part_3=" Stunden brauchen, dann brauchen ";
+Solution_Label_part_4=" Leute ";
+Solution_Label_part_5=" Stunden.";
+
+
+//Solution_Label_part_1="If";
+//Solution_Label_part_2="people need";
+//Solution_Label_part_3="hours, then";
+//Solution_Label_part_4="people need 2.5 hours";
+//Solution_Label_part_5="hours";

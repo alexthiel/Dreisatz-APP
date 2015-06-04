@@ -128,10 +128,12 @@ import UIKit
             Formel_LF.text = "(\(zahl2) / \(zahl3))  * \(zahl1) = \(zahl2 / zahl3 * zahl1)"
             Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 / zahl3 * zahl1)
 			
-			//let Solutionfield = NSString.localizedStringWithFormat(NSLocalizedString("Solution_Label", comment: "Solution_Label"),) + "HAllo"
 			
-			let Solutionfield = NSLocalizedString("Solution_Label", comment:"Solution_Label") + ("hallo")
-			println (Solutionfield)
+			let Solutionfield1 = NSLocalizedString("Solution_Label_part_1", comment:"Solution_Label_Part_1") + (Eingabe1_TF.text) + NSLocalizedString("Solution_Label_part_2", comment:"Solution_Label_Part_2") + (Eingabe2_TF.text) + NSLocalizedString("Solution_Label_part_3", comment:"Solution_Label_Part_3") + (Eingabe3_TF.text)
+			let Solutionfield2 = NSLocalizedString("Solution_Label_part_4", comment:"Solution_Label_Part_4") + (Ergebnis_Label.text)! + NSLocalizedString("Solution_Label_part_5", comment:"Solution_Label_Part_5")
+
+	
+			Solution_Label.text = Solutionfield1 + Solutionfield2
 			
 		}
         
