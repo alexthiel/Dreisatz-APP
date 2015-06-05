@@ -49,7 +49,7 @@ import UIKit
             Eingabe2_TF.delegate = self
             Eingabe3_TF.delegate = self
 			
-			Solutionphrase()
+			Solutionphrase_ini()
         }
         
         override func canBecomeFirstResponder() -> Bool {
@@ -64,9 +64,18 @@ import UIKit
             Formel_LF.text = ""
             Ergebnis_Label.text = ""
             //Solution_Label.text = ""
-			Solutionphrase()
+			Solutionphrase_ini()
         }
         
+		
+
+		func Solutionphrase_ini () {
+			let Solutionfield1 = NSLocalizedString("Solution_Label_part_1", comment:"Solution_Label_Part_1") + ("XX") + NSLocalizedString("Solution_Label_part_2", comment:"Solution_Label_Part_2") + ("YY") + NSLocalizedString("Solution_Label_part_3", comment:"Solution_Label_Part_3") + ("ZZ")
+			let Solutionfield2 = NSLocalizedString("Solution_Label_part_4", comment:"Solution_Label_Part_4") + ("XYZ") + NSLocalizedString("Solution_Label_part_5", comment:"Solution_Label_Part_5")
+						
+			Solution_Label.text = Solutionfield1 + Solutionfield2
+			
+		}
 		
 		
 		func Solutionphrase () {
