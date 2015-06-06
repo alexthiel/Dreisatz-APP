@@ -11,10 +11,10 @@ Eingabe_3="Eingabe 3 ist leer";
 //Solution_Label="Wenn 10 Leute 5 Stunden brauchen, dann brauchen 20 Leute 2.5 Stunden";
 
 Solution_Label_part_1="Wenn ";
-Solution_Label_part_2=" Leute ";
-Solution_Label_part_3=" Stunden brauchen, dann brauchen ";
-Solution_Label_part_4=" Leute ";
-Solution_Label_part_5=" Stunden.";
+Solution_Label_part_2=" Person(en) ";
+Solution_Label_part_3=" Stunde(n) braucht(en), um eine Glühbirne zu wechseln, dann braucht(en) ";
+Solution_Label_part_4=" Person(en) ";
+Solution_Label_part_5=" Stunde(n).";
 
 
 //Solution_Label_part_1="If";

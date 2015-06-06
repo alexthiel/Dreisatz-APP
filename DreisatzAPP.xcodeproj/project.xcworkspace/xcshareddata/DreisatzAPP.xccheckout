@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C3B92C7-D7FE-4950-9D1C-64B39DCE51A5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DreisatzAPP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>67F7C492C629F88A3B35EDE6D826F8028CC46C4E</key>
+		<string>https://github.com/alexthiel/Dreisatz-APP</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DreisatzAPP.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>67F7C492C629F88A3B35EDE6D826F8028CC46C4E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alexthiel/Dreisatz-APP</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>67F7C492C629F88A3B35EDE6D826F8028CC46C4E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67F7C492C629F88A3B35EDE6D826F8028CC46C4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Dreisatz-APP</string>
+		</dict>
+	</array>
+</dict>
+</plist>
