@@ -164,6 +164,8 @@
 		77EC1D211B1B9FD80061C53E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Thiel, Alexander";
 				TargetAttributes = {

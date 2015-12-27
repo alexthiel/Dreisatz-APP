@@ -10,7 +10,7 @@ import UIKit
 
 
     class CustomTextField: UITextField{
-        required init(coder aDecoder: NSCoder) {
+        required init?(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
             
             //Border
@@ -87,12 +87,12 @@ import UIKit
 
 		}
 		
-        override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
             view.endEditing(true)
             super.touchesBegan(touches, withEvent: event)
         }
         
-        override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+        override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
             if motion == .MotionShake{
                 clearButtonPressed()
             }

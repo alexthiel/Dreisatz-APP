@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,31 +12,78 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Thiel, Alexander. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DreisatzAPP" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="blue-grey-pentagonal-background" translatesAutoresizingMaskIntoConstraints="NO" id="Rst-yj-zHX">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Rst-yj-zHX" secondAttribute="height" multiplier="3:2" id="byV-61-14e"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="byV-61-14e"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="3000" height="2000"/>
+                        <mask key="constraints">
+                            <include reference="byV-61-14e"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="trailing" secondItem="Rst-yj-zHX" secondAttribute="trailing" constant="-5" id="79L-ct-mRg"/>
+                <constraint firstAttribute="bottom" secondItem="Rst-yj-zHX" secondAttribute="bottom" id="Dd0-E5-uVn"/>
+                <constraint firstAttribute="trailing" secondItem="Rst-yj-zHX" secondAttribute="trailing" id="LHh-DP-kDC"/>
+                <constraint firstAttribute="bottom" secondItem="Rst-yj-zHX" secondAttribute="bottom" id="Mce-Ef-u26"/>
+                <constraint firstItem="Rst-yj-zHX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gMc-WB-ZdP"/>
+                <constraint firstItem="Rst-yj-zHX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-5" id="hTz-WM-7mz"/>
+                <constraint firstAttribute="trailing" secondItem="Rst-yj-zHX" secondAttribute="trailing" constant="-2520" id="t6s-OO-lho"/>
+                <constraint firstItem="Rst-yj-zHX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-5" id="t91-Ez-bAO"/>
+                <constraint firstAttribute="bottom" secondItem="Rst-yj-zHX" secondAttribute="bottom" constant="-5" id="tYv-zk-8Gg"/>
+                <constraint firstItem="Rst-yj-zHX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xd0-0c-SwP"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="79L-ct-mRg"/>
+                    <exclude reference="Dd0-E5-uVn"/>
+                    <exclude reference="LHh-DP-kDC"/>
+                    <exclude reference="Mce-Ef-u26"/>
+                    <exclude reference="gMc-WB-ZdP"/>
+                    <exclude reference="hTz-WM-7mz"/>
+                    <exclude reference="t6s-OO-lho"/>
+                    <exclude reference="t91-Ez-bAO"/>
+                    <exclude reference="tYv-zk-8Gg"/>
+                    <exclude reference="xd0-0c-SwP"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Dd0-E5-uVn"/>
+                    <include reference="LHh-DP-kDC"/>
+                    <include reference="Mce-Ef-u26"/>
+                    <include reference="gMc-WB-ZdP"/>
+                    <include reference="t6s-OO-lho"/>
+                    <include reference="xd0-0c-SwP"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="79L-ct-mRg"/>
+                    <include reference="hTz-WM-7mz"/>
+                    <include reference="t91-Ez-bAO"/>
+                    <include reference="tYv-zk-8Gg"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="blue-grey-pentagonal-background" width="3000" height="2000"/>
+    </resources>
 </document>
