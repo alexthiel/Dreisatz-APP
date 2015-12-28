@@ -79,7 +79,7 @@ import UIKit
 		
 		
 		func Solutionphrase () {
-			let Solutionfield1 = NSLocalizedString("Solution_Label_part_1", comment:"Solution_Label_Part_1") + (Eingabe1_TF.text) + NSLocalizedString("Solution_Label_part_2", comment:"Solution_Label_Part_2") + (Eingabe2_TF.text) + NSLocalizedString("Solution_Label_part_3", comment:"Solution_Label_Part_3") + (Eingabe3_TF.text)
+			let Solutionfield1 = NSLocalizedString("Solution_Label_part_1", comment:"Solution_Label_Part_1") + (Eingabe1_TF.text)! + NSLocalizedString("Solution_Label_part_2", comment:"Solution_Label_Part_2") + (Eingabe2_TF.text)! + NSLocalizedString("Solution_Label_part_3", comment:"Solution_Label_Part_3") + (Eingabe3_TF.text)!
 			let Solutionfield2 = NSLocalizedString("Solution_Label_part_4", comment:"Solution_Label_Part_4") + (Ergebnis_Label.text)! + NSLocalizedString("Solution_Label_part_5", comment:"Solution_Label_Part_5")
 			
 			
@@ -114,7 +114,7 @@ import UIKit
         
         func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
             
-            textField.text = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+            textField.text = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
 			Solutionphrase()
 			checkEingabe()
             return false
@@ -127,22 +127,22 @@ import UIKit
         
         func checkEingabe() {
             
-            let zahl1 = NSString (string:Eingabe1_TF.text).doubleValue
-            let zahl2 = NSString (string:Eingabe2_TF.text).doubleValue
-            let zahl3 = NSString (string:Eingabe3_TF.text).doubleValue
+            let zahl1 = NSString (string:Eingabe1_TF.text!).doubleValue
+            let zahl2 = NSString (string:Eingabe2_TF.text!).doubleValue
+            let zahl3 = NSString (string:Eingabe3_TF.text!).doubleValue
             
             
-            if Eingabe1_TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
-                Formel_LF.text = NSLocalizedString("Eingabe_1", comment: "Eingabe 1 ist leer")
+            if Eingabe1_TF.text!.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
+                self.Formel_LF.text = NSLocalizedString("Eingabe_1", comment: "Eingabe 1 ist leer")
                 return
             } else if
                 
-                Eingabe2_TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
+                Eingabe2_TF.text!.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
                     Formel_LF.text = NSLocalizedString("Eingabe_2", comment: "Eingabe 2 ist leer")
                     return
             } else if
                 
-                Eingabe3_TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
+                Eingabe3_TF.text!.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
                     Formel_LF.text = NSLocalizedString("Eingabe_3", comment: "Eingabe 3 ist leer")
                     return
             }
