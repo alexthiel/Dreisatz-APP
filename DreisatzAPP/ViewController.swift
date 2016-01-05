@@ -161,8 +161,12 @@ import UIKit
             }
             
             
-            Formel_LF.text = "(\(zahl2) / \(zahl3))  * \(zahl1) = \(zahl2 / zahl3 * zahl1)"
-            Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 / zahl3 * zahl1)
+//          Formel_LF.text = "(\(zahl2) / \(zahl3))  * \(zahl1) = \(zahl2 / zahl3 * zahl1)"
+//          Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 / zahl3 * zahl1)
+
+			Formel_LF.text = "(\(zahl2) * \(zahl1))  / \(zahl3) = \(zahl2 * zahl1 / zahl3)"
+			Ergebnis_Label.text = numberFormatter.stringFromNumber(zahl2 * zahl1 / zahl3)
+
 			
 			Solutionphrase()
 			
