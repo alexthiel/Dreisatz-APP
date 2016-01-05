@@ -126,11 +126,24 @@ import UIKit
 		}
         
         func checkEingabe() {
-            
-            let zahl1 = NSString (string:Eingabe1_TF.text!).doubleValue
-            let zahl2 = NSString (string:Eingabe2_TF.text!).doubleValue
-            let zahl3 = NSString (string:Eingabe3_TF.text!).doubleValue
-            
+			
+			//let zahl1 = NSString (string:Eingabe1_TF.text!).doubleValue
+			//let zahl2 = NSString (string:Eingabe2_TF.text!).doubleValue
+			//let zahl3 = NSString (string:Eingabe3_TF.text!).doubleValue
+
+
+			let zahl1_hilfe = NSString (string:Eingabe1_TF.text!)
+			let zahl1_formel = zahl1_hilfe.stringByReplacingOccurrencesOfString(",", withString: ".")
+			let zahl1 = NSString (string: zahl1_formel).doubleValue
+
+			let zahl2_hilfe = NSString (string:Eingabe2_TF.text!)
+			let zahl2_formel = zahl2_hilfe.stringByReplacingOccurrencesOfString(",", withString: ".")
+			let zahl2 = NSString (string: zahl2_formel).doubleValue
+
+			let zahl3_hilfe = NSString (string:Eingabe3_TF.text!)
+			let zahl3_formel = zahl3_hilfe.stringByReplacingOccurrencesOfString(",", withString: ".")
+			let zahl3 = NSString (string: zahl3_formel).doubleValue
+			
             
             if Eingabe1_TF.text!.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
                 self.Formel_LF.text = NSLocalizedString("Eingabe_1", comment: "Eingabe 1 ist leer")
