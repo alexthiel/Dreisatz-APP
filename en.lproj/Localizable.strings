@@ -9,13 +9,14 @@ Eingabe_1="Value 1 empty";
 Eingabe_2="Value 2 empty";
 Eingabe_3="Value 1 empty";
 //Solution_Label="If 10 people need 5 hours, then 20 people need 2.5 hours";
+
 Solution_Label_part_1="If ";
 Solution_Label_part_2=" people need ";
 Solution_Label_part_3=" hour(s) to change a lightbulp, then ";
 Solution_Label_part_4=" people need ";
 Solution_Label_part_5=" hour(s).";
 
-
+Ergebnis_Label="Result";
 //Solution_Label_part_1="Wenn";
 //Solution_Label_part_2="Leute";
 //Solution_Label_part_3="Stunden brauchen, dann brauchen";

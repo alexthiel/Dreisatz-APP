@@ -16,7 +16,7 @@ Solution_Label_part_3=" Stunde(n) braucht(en), um eine Glühbirne zu wechseln, d
 Solution_Label_part_4=" Person(en) ";
 Solution_Label_part_5=" Stunde(n).";
 
-
+Ergebnis_Label="Ergebnis";
 //Solution_Label_part_1="If";
 //Solution_Label_part_2="people need";
 //Solution_Label_part_3="hours, then";
